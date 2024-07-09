@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Spinner</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="pedro.png" type="image/x-icon">
-    </head>
+</head>
 
-    <body>
-       <audio id="miAudio" loop autoplay controls>
-            <source src="pedro.mp4" type="audio/mp4">
-            Tu navegador no soporta la etiqueta de audio.
-        </audio>
-        <div class="spinner">
-            <img src="pedro.png" alt="Pedro!">
-        </div>
-        <footer>
-            <p>Aporte realizado por Gisele M. Gonzalez</p>
-            <a href="https://www.linkedin.com/in/gisele-milagros-gonzalez" target="_blank">LinkedIn</a>
-            
-        </footer>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                let audio = document.getElementById("miAudio");
-               
-                    audio.currentTime = 41; // Establece el punto de inicio en el segundo 41
-                    audio.play();
-            
-            });
-        </script>
-    </body>
+<body>
+    <audio id="miAudio" loop autoplay controls>
+        <source src="pedro.mp4" type="audio/mp4">
+    </audio>
+    <div class="spinner">
+        <img src="pedro.png" alt="Pedro!">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("miAudio");
+
+            audio.currentTime = 41;
+            audio.play();
+
+        });
+    </script>
+</body>
 
 </html>
